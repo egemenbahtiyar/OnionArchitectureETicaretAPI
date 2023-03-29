@@ -9,7 +9,7 @@ public class DesignTimeDbContextFactory : IDesignTimeDbContextFactory<ETicaretAP
     public ETicaretAPIDbContext CreateDbContext(string[] args)
     {
         DbContextOptionsBuilder<ETicaretAPIDbContext> dbContextOptionsBuilder = new();
-        dbContextOptionsBuilder.UseSqlServer("Data Source=.\\SQLEXPRESS;database=ETicaretAPI_DB; integrated security=SSPI");
+        dbContextOptionsBuilder.UseSqlServer(Configuration.ConnectionString);
         return new ETicaretAPIDbContext(dbContextOptionsBuilder.Options);
     }
 }
