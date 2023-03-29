@@ -16,6 +16,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\OnionArchitectureETicaretAPI.Application\OnionArchitectureETicaretAPI.Application.csproj" />
+      <ProjectReference Include="..\OnionArchitectureETicaretAPI.Infrastructure\OnionArchitectureETicaretAPI.Infrastructure.csproj" />
       <ProjectReference Include="..\OnionArchitectureETicaretAPI.Persistence\OnionArchitectureETicaretAPI.Persistence.csproj" />
     </ItemGroup>
 
