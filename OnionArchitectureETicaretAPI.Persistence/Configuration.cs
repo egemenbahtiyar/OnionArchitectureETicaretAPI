@@ -8,11 +8,10 @@ public static class Configuration
     {
         get
         {
-            IConfigurationRoot configuration = new ConfigurationBuilder()
-                .SetBasePath(System.IO.Path.Combine(System.AppContext.BaseDirectory, "..", "..", "OnionArchitectureETicaretAPI.API"))
-                .AddJsonFile("appsettings.json")
-                .Build();
-            return configuration.GetConnectionString("MSSQLServer");
+            ConfigurationManager configurationManager = new();
+            configurationManager.SetBasePath(Path.Combine(Directory.GetCurrentDirectory(), "..","OnionArchitectureETicaretAPI.API"));
+            configurationManager.AddJsonFile("appsettings.json");
+            return configurationManager.GetConnectionString("MSSQLServer");
         }
     }
 }
