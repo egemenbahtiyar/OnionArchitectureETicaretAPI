@@ -10,4 +10,8 @@
       <ProjectReference Include="..\OnionArchitectureETicaretAPI.Domain\OnionArchitectureETicaretAPI.Domain.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.14" />
+    </ItemGroup>
+
 </Project>
